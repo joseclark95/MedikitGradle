@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="560.0" spacing="20.0" stylesheets="@../css/Lists.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="notification-text" text="22 de Nov del 2018" textAlignment="CENTER" wrappingWidth="240.0" />
+      <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="30.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="notification-text" text="09:00" textAlignment="CENTER" wrappingWidth="240.0" />
+   </children>
+</HBox>

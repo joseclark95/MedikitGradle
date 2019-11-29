@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="4.0" stylesheets="@../css/Notification.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Tienes">
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="amount" text="10000000000000000" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="notificaciones sin ver" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+   </padding>
+</HBox>
