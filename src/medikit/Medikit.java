@@ -482,8 +482,8 @@ public class Medikit extends Application
     {
         while(true)
         {
-            message1Ctrl.initController("warning-icon", "Conexión fallida", "No se ha podido conectar con la base de datos."
-                + "\nPorfavor reintente conectar o cierre la aplicación", "Reintentar", "Salir");
+            message1Ctrl.initController("warning-icon", "Conexion fallida", "No se ha podido conectar con la base de datos."
+                + "\nPorfavor reintente conectar o cierre la aplicacion", "Reintentar", "Salir");
             mainCtrl.showPopup(message1Stage);
             if(message1Ctrl.getActionStyle() == ActionStyle.CANCELED)
                 System.exit(0);
@@ -506,8 +506,8 @@ public class Medikit extends Application
     {
         while(true)
         {
-            message1Ctrl.initController("warning-icon", "Conexión fallida", "No se ha podido conectar con la base de datos."
-                + "\nPorfavor reintente conectar o cierre la aplicación", "Reintentar", "Salir");
+            message1Ctrl.initController("warning-icon", "Conexion fallida", "No se ha podido conectar con la base de datos."
+                + "\nPorfavor reintente conectar o cierre la aplicacion", "Reintentar", "Salir");
             mainCtrl.showPopup(message1Stage);
             if(message1Ctrl.getActionStyle() == ActionStyle.CANCELED)
                 System.exit(0);

@@ -1,0 +1,1417 @@
+.root
+{
+    -fx-background-color: white;
+    -fx-font-family: "Calibri";
+}
+
+.titled-pane
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-insets: 0;
+}
+
+.titled-pane:focused
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.titled-pane .title
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    
+    -fx-padding: 0 0 0 10;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.titled-pane .arrow
+{
+    -fx-background-color: transparent;
+    
+    -fx-padding: 10;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-insets: 0;
+}
+
+.titled-pane .arrow-button
+{
+    -fx-background-color: lightgray;
+    
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-insets: 0;
+    -fx-shape: "M70.5,0C31.6,0,0,31.6,0,70.5S31.6,141,70.5,141S141,109.4,141,70.5C141,31.6,109.5,0,70.5,0C70.5,0,70.5,0,70.5,0z
+                M122.3,75H75v47.3c0,2.5-2,4.5-4.5,4.5s-4.5-2-4.5-4.5V75H18.7c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5H66V18.7c0-2.5,2-4.5,4.5-4.5
+               s4.5,2,4.5,4.5V66h47.3c2.5,0,4.5,2,4.5,4.5S124.8,75,122.3,75z";
+}
+
+.titled-pane:expanded .arrow-button
+{    
+    -fx-background-color: darkgray;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-shape: "M70.5,0C31.6,0,0,31.6,0,70.5S31.6,141,70.5,141S141,109.4,141,70.5C141,31.6,109.5,0,70.5,0C70.5,0,70.5,0,70.5,0z
+                M122.3,75H18.7c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5h103.5c2.5,0,4.5,2,4.5,4.5S124.8,75,122.3,75z";
+}
+
+.titled-pane:expanded .title
+{
+    -fx-background-color: rgba(255, 255, 224, 1);
+    -fx-border-color: transparent transparent lightgray transparent;
+}
+
+.titled-pane:expanded
+{
+    -fx-background-color: rgba(255, 255, 224, 0.3);
+}
+
+.titled-pane .content, .titled-pane:expanded .content
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-effect: null;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.titled-pane:expanded:focused .content, .titled-pane:focused .content
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-effect: null;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.separator
+{
+    -fx-border-color: transparent transparent transparent lightgray;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+}
+
+.separator .line
+{
+    -fx-border-color: transparent transparent transparent transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+}
+
+.separator:horizontal
+{
+    -fx-border-color: transparent transparent transparent lightgray;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+}
+
+.separator:horizontal .line
+{
+    -fx-border-color: transparent transparent transparent transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+}
+
+.tile-text
+{
+    -fx-fill: derive(black, 50%);
+    -fx-font-size: 1.1em;
+}
+
+.patient-search-label
+{
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri";
+}
+
+.patient-search-text
+{
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-size: 1em;
+    -fx-font-family: "Calibri";
+}
+
+.patient-search-title
+{
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri";
+}
+
+.notification-text
+{
+    -fx-fill: derive(black, 50%);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+}
+
+.last-visit-text
+{
+    -fx-fill: dodgerblue;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.appointments-amount
+{
+    -fx-fill: dodgerblue;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.patient-information-background
+{
+    -fx-background-color: rgba(255, 255, 224, 1);
+    -fx-border-color: lightgray;
+}
+
+.patient-information-title
+{
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+    -fx-font-size: 1em;
+}
+
+.search-icon
+{
+    -fx-shape: "M14.1,24.6c-2.7,6.7-2.3,14.3,1.2,20.6c1.1,1.9,2.4,3.7,3.9,5.2c1,1,1,2.6,0,3.5c-0.5,0.5-1.1,0.7-1.7,0.7
+                c-0.7,0-1.3-0.3-1.8-0.7c-11.2-11.2-11.2-29.3,0-40.6c0,0,0,0,0,0c1-1,2.6-0.9,3.5,0.1c0.9,1,0.9,2.5,0,3.5
+                C17,19,15.3,21.7,14.1,24.6z M113.8,109.3c0,1.1-0.5,2.2-1.4,2.9l-0.1,0.1c0,0,0,0.1-0.1,0.1c-0.7,0.9-1.8,1.4-2.9,1.4h-0.4
+                c-4.3,0-10.8-4.4-20.1-13.5l-0.1-0.1L51.9,63.4c-16.2,9.8-37.3,4.7-47.1-11.5S0.1,14.6,16.3,4.8s37.3-4.7,47.1,11.5
+                c6.6,10.9,6.6,24.7,0,35.6l35.3,35.3l0,0l0.1,0.1l1.3,1.3l0.1,0.1C109.6,98.3,114,105.1,113.8,109.3z M54.8,54.8
+                c11.4-11.4,11.4-29.9,0-41.3s-29.9-11.4-41.3,0s-11.4,29.9,0,41.3c5.5,5.5,12.9,8.5,20.6,8.5c2.3,0,4.6-0.3,6.8-0.8
+                C46.2,61.3,51,58.6,54.8,54.8z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.save-button
+{
+    -fx-background-color: derive(white, -15%);
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-weight: bold;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+.save-icon-background
+{
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+}
+
+.medicament-amount
+{
+    -fx-fill: violet;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.medicament-dosages
+{
+    -fx-fill: dodgerblue;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.brand-name
+{
+    -fx-fill: dodgerblue;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+.generic-name
+{
+    -fx-fill: derive(black, 50%);
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+}
+
+.not-saved-icon
+{
+    -fx-shape: "M70,0C31.3,0,0,31.3,0,70s31.3,70,70,70s70-31.3,70-70S108.7,0,70,0z M108.2,101.1c2,1.9,2,5.1,0.1,7.1s-5.1,2-7.1,0.1
+                c0,0-0.1-0.1-0.1-0.1L70,77.1l-31.1,31.1c-1.9,2-5.1,2-7.1,0.1s-2-5.1-0.1-7.1c0,0,0.1-0.1,0.1-0.1L62.9,70L31.8,38.9
+                c-1.9-2-1.9-5.2,0.1-7.1c1.9-1.9,5-1.9,6.9,0L70,62.9l31.1-31.1c1.9-2,5.1-2,7.1-0.1c2,1.9,2,5.1,0.1,7.1c0,0-0.1,0.1-0.1,0.1
+                L77.1,70L108.2,101.1z";
+    -fx-background-color: crimson;
+}
+
+.saved-icon
+{
+    -fx-shape: "M70,0C31.3,0,0,31.3,0,70s31.3,70,70,70s70-31.3,70-70S108.7,0,70,0z M116.9,38.9l-69.3,69.3c-0.9,0.9-2.2,1.5-3.6,1.5
+                c-0.1,0-0.2,0-0.3,0s-0.2,0-0.4,0c-1.3,0-2.6-0.5-3.5-1.5L23.1,91.5c-2-2-2-5.1,0-7.1c2-2,5.1-2,7.1,0l13.5,13.5l66.1-66.1
+                c2-1.9,5.2-1.9,7.1,0.1C118.7,33.9,118.7,37,116.9,38.9z";
+    -fx-background-color: green;
+}
+
+.check-box
+{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+.check-box .box
+{
+    -fx-background-color: transparent;
+    -fx-border-color: darkgray;
+    -fx-border-width: 1px;
+    
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    
+    -fx-alignment: center;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 4;
+}
+
+.check-box .mark
+{
+    -fx-shape: "M77.8,70.8c2,1.9,2,5.1,0.1,7.1s-5.1,2-7.1,0.1c0,0-0.1-0.1-0.1-0.1L39.7,46.7L8.5,77.8c-2,2-5.1,2-7.1,0
+                c-2-2-2-5.1,0-7.1l31.1-31.1L1.5,8.5c-2-2-2-5.1,0-7.1s5.1-2,7.1,0l31.1,31.1L70.8,1.5c2-2,5.1-2,7.1,0c2,2,2,5.1,0,7.1L46.7,39.7
+                L77.8,70.8z";
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.check-box:selected .mark
+{
+    -fx-shape: "M77.8,70.8c2,1.9,2,5.1,0.1,7.1s-5.1,2-7.1,0.1c0,0-0.1-0.1-0.1-0.1L39.7,46.7L8.5,77.8c-2,2-5.1,2-7.1,0
+                c-2-2-2-5.1,0-7.1l31.1-31.1L1.5,8.5c-2-2-2-5.1,0-7.1s5.1-2,7.1,0l31.1,31.1L70.8,1.5c2-2,5.1-2,7.1,0c2,2,2,5.1,0,7.1L46.7,39.7
+                L77.8,70.8z";
+    -fx-background-color: gray;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane
+{
+    -fx-background-color: rgba(255, 255, 224, 1);
+    -fx-border-color: lightgray;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane:focused
+{
+    -fx-background-color: rgba(255, 255, 224, 1);
+    -fx-border-color: lightgray;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area
+{
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 20;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .headers-region
+{
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .tab-header-background
+{
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .control-buttons-tab
+{
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .control-buttons-tab .tab-down-button
+{
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .control-buttons-tab .tab-down-button .arrow 
+{
+    -fx-background-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.tab-pane .tab-header-area .tab 
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-cursor: hand;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-padding: 10 0 10 0;
+    
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab:selected, .tab-pane .tab-header-area .tab:focused, 
+    .tab-pane:focused .tab-header-area .tab:selected, .tab-pane:focused .tab-header-area .tab:focused
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-cursor: hand;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-padding: 10 0 10 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab:selected .tab-content, .tab-pane .tab-header-area .tab:focused .tab-content, 
+    .tab-pane:focused .tab-header-area .tab:selected .tab-content, .tab-pane:focused .tab-header-area .tab:focused .tab-content
+{
+    -fx-background-color: salmon;
+    -fx-font-weight: bold;
+}
+    
+.tab-pane .tab-content-area
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-padding: 0;
+}
+
+.tab-content
+{
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 20px 20px 20px 20px;
+    
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-size: 1.1em;
+}
+
+.button:hover
+{
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+}
+
+.button:pressed
+{
+    -fx-background-color: darkgray;
+    -fx-text-fill: black;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.button:focused
+{
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+.text-field
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: darkgray;
+    -fx-highlight-fill: gray;
+    -fx-highlight-text-fill: white;
+    
+    -fx-font-size: 1.2em;
+    -fx-text-fill: derive(black, 50%);
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.text-field:focused
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    
+    -fx-scale-x: 1.05;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-pane, .scroll-pane:focused
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-pane .viewport, .scroll-pane:focused .viewport
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal .track 
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal .thumb  
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal .thumb:hover 
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal .thumb:pressed 
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar:horizontal .decrement-button, .scroll-bar:horizontal .decrement-button .decrement-arrow,
+    .scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .increment-button .increment-arrow
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar
+{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent transparent darkgray;
+    -fx-border-width: 1px;
+    
+    -fx-padding: 2;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar .track 
+{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb  
+{
+    -fx-background-color: lightgray;
+    -fx-border-color: darkgray;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    
+    -fx-cursor: hand;
+}
+
+.scroll-bar .thumb:hover 
+{
+    -fx-scale-y: 1.015;
+    
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar .thumb:pressed 
+{
+    -fx-background-color: darkgray;
+    -fx-border-color: gray;
+    
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.scroll-bar .decrement-button, .scroll-bar .decrement-button .decrement-arrow,
+    .scroll-bar .increment-button, .scroll-bar .increment-button .increment-arrow
+{
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.date-picker
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker .date-picker-display-node, .date-picker .date-picker-display-node:focused
+{
+    -fx-alignment: center;
+    -fx-display-caret: false;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.patient-information-icon
+{
+    -fx-shape: "M109.5,105.8c-1.4,0-2.5,1.1-2.5,2.5v28.2c0,5.2-4.3,9.5-9.5,9.5h-83c-5.2,0-9.5-4.3-9.5-9.5v-122C5,9.3,9.3,5,14.5,5h58
+                v24.9c0,4.2,3.4,7.6,7.6,7.6H107v22.9c0,1.4,1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5V35.5c0-0.7-0.3-1.3-0.8-1.8l-0.5-0.5
+                c-0.2-0.1-0.3-0.3-0.5-0.4c-0.1-0.2-0.3-0.4-0.5-0.6l-32-31c-0.4-0.4-0.9-0.6-1.5-0.7c-0.4-0.3-1-0.5-1.5-0.5H14.5
+                C6.5,0,0,6.5,0,14.5v122c0,8,6.5,14.5,14.5,14.5h83c8,0,14.5-6.5,14.5-14.5v-28.2C112,106.9,110.9,105.8,109.5,105.8z M102.9,32.5
+                H80.1c-1.4,0-2.6-1.2-2.6-2.6v0v-22L102.9,32.5z M142.4,67.6l-7.9-9.6c-2.2-2.7-6.2-3-8.9-0.8L63.1,109l0,0l-4.8,4l0,0
+                c-0.2,0.2-0.3,0.5-0.4,0.8l-6.1,18.1c0,0,0,0,0,0.1l-0.1,0.3c0,0.1,0,0.1,0,0.2v0.2c0,0.1,0,0.2,0,0.3v0.1c0,0.1,0,0.1,0,0.2
+                c0,0.1,0,0.1,0,0.2c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.1,0.1,0.2c0,0.1,0.1,0.2,0.2,0.3l0.1,0.1l0.2,0.2l0.1,0.1
+                c0.1,0.1,0.2,0.2,0.4,0.3h0.1c0.1,0.1,0.2,0.1,0.4,0.2l0,0l0.2,0.1h0.2c0.1,0,0.3,0,0.4,0h0.4l18.9-2.7c0.3,0,0.6-0.1,0.8-0.3l0,0
+                l4.8-4l0,0l62.4-51.8C144,74.1,144.5,70.3,142.4,67.6z M75.9,124.4c-0.2,0.2-0.5,0.3-0.8,0.3c-0.4,0-0.8-0.2-1-0.5l-6.3-7.6
+                l-1.6-2c-0.4-0.6-0.4-1.4,0.2-1.8l7.5-6.2l9.6,11.5l-7.1,5.9L75.9,124.4z M77.7,103.4l42.6-35.3l9.6,11.5L87.2,115L77.7,103.4z
+                 M57.8,129.6l4.2-12.2l0.4,0.4l0,0l4,4.8l4.3,5.2L57.8,129.6z M138.8,71.7c0,0.3-0.2,0.7-0.4,0.9l-4.6,3.8l-9.6-11.6l4.6-3.9
+                c0.2-0.2,0.5-0.3,0.8-0.3c0.4,0,0.8,0.2,1,0.5l7.9,9.6C138.7,71,138.8,71.4,138.8,71.7L138.8,71.7z M92,49c0,1.4-1.1,2.5-2.5,2.5
+                h-67c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h67C90.9,46.5,92,47.6,92,49z M92,59c0,1.4-1.1,2.5-2.5,2.5h-67
+                c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h67C90.9,56.5,92,57.6,92,59z M89.5,71.5h-67c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h67
+                c1.4,0,2.5,1.1,2.5,2.5S90.9,71.5,89.5,71.5z M74.3,91.5H22.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h51.8c1.4,0,2.5,1.1,2.5,2.5
+                S75.6,91.5,74.3,91.5z M59.3,101.5H22.5c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5h36.8c1.4,0,2.5,1.1,2.5,2.5
+                S60.6,101.5,59.3,101.5z M46.3,126.5c1.4,0,2.5,1.1,2.5,2.5c0,1.4-1.1,2.5-2.5,2.5H22.5c-1.4,0-2.5-1.1-2.5-2.5
+                c0-1.4,1.1-2.5,2.5-2.5H46.3z M85.3,131.5c-1.4,0-2.5-1.1-2.5-2.5c0-1.4,1.1-2.5,2.5-2.5h4c1.4,0,2.5,1.1,2.5,2.5
+                c0,1.4-1.1,2.5-2.5,2.5H85.3z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.patient-appointments-icon
+{
+    -fx-shape: "M123.5,21.5h-12v-14c0-4.1-3.4-7.5-7.5-7.5c0,0,0,0,0,0h-6c-4.1,0-7.5,3.4-7.5,7.5v14h-49v-14C41.5,3.4,38.1,0,34,0h-6
+                c-4.1,0-7.5,3.4-7.5,7.5v14h-12C3.8,21.5,0,25.3,0,30c0,0,0,0,0,0v120.5c0,4.7,3.8,8.4,8.5,8.5h115.1c4.7,0,8.4-3.8,8.5-8.5V30
+                C132,25.3,128.2,21.5,123.5,21.5C123.5,21.5,123.5,21.5,123.5,21.5z M95.5,7.5C95.5,6.1,96.6,5,98,5h6c1.4,0,2.5,1.1,2.5,2.5v24
+                c0,1.4-1.1,2.5-2.5,2.5h-6c-1.4,0-2.5-1.1-2.5-2.5L95.5,7.5z M25.5,7.5C25.5,6.1,26.6,5,28,5h6c1.4,0,2.5,1.1,2.5,2.5v24
+                c0,1.4-1.1,2.5-2.5,2.5h-6c-1.4,0-2.5-1.1-2.5-2.5L25.5,7.5z M8.5,26.5h12v5c0,4.1,3.3,7.5,7.5,7.5h6c4.1,0,7.5-3.4,7.5-7.5l0,0
+                v-5h49v5c0,4.1,3.4,7.5,7.5,7.5l0,0h6c4.1,0,7.5-3.4,7.5-7.5l0,0v-5h12c1.9,0,3.5,1.5,3.5,3.4c0,0,0,0.1,0,0.1v19.4H5V30
+                c0-1.9,1.5-3.5,3.4-3.5C8.4,26.5,8.4,26.5,8.5,26.5L8.5,26.5z M123.5,154H8.5c-1.9,0-3.5-1.5-3.5-3.5l0,0V54.4h122v96.1
+                C127,152.5,125.5,154,123.5,154C123.5,154,123.5,154,123.5,154z M68.2,61.6c-0.7-1.2-2.2-1.6-3.4-0.9c-0.4,0.2-0.7,0.5-0.9,0.9
+                l-21.4,37c-0.4,0.8-0.4,1.7,0,2.5c0.4,0.8,1.3,1.3,2.2,1.3h42.7c0.9,0,1.7-0.5,2.2-1.3c0.4-0.8,0.4-1.7,0-2.5L68.2,61.6z M49,97.3
+                l17-29.5l17,29.5H49z M87.4,106.3H44.6c-1.4,0-2.5,1.1-2.5,2.5c0,0.4,0.1,0.9,0.3,1.3l21.4,37c0.7,1.2,2.2,1.6,3.4,0.9
+                c0.4-0.2,0.7-0.5,0.9-0.9l21.4-37c0.7-1.2,0.3-2.7-0.9-3.4C88.2,106.4,87.8,106.3,87.4,106.3L87.4,106.3z M66,140.8l-17-29.5h34
+                L66,140.8z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.date-picker:editable .arrow-button
+{
+    -fx-background-color: derive(white, -15%);
+    -fx-shape: null;
+    -fx-cursor: hand;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 5;
+}
+
+.date-picker:editable .arrow-button:hover
+{
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+}
+
+.date-picker:editable > .arrow-button > .arrow 
+{
+    -fx-shape: "M0,0v9h9V0H0z M2,8H1V7h1V8z M2,6H1V5h1V6z M2,4H1V3h1V4z M4,8H3V7h1V8z M4,6H3V5h1V6z M4,4H3V3h1V4z M6,8H5V7h1V8z M6,6H5 V5h1V6z M6,4H5V3h1V4z M8,8H7V7h1V8z M8,6H7V5h1V6z M8,4H7V3h1V4z";
+    -fx-background-color: gray;
+    -fx-background-insets: 0;
+    -fx-padding: 8;
+    -fx-scale-shape: true;
+}
+
+.date-picker:editable:showing .arrow-button
+{
+    -fx-background-color: darkgray;
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+}
+
+.date-picker:editable:showing .arrow-button .arrow
+{
+    -fx-background-color: derive(black, 50%);
+}
+
+.opcional-message
+{
+    -fx-fill: darkgray;
+    -fx-font-size: 1.05em;
+}
+
+.text-area
+{
+    -fx-background-color: white;
+    -fx-alignment: CENTER;
+    
+    -fx-background-color: transparent;
+    -fx-border-color: gray transparent gray transparent;
+    -fx-border-width: 2px;
+    
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: darkgray;
+    -fx-highlight-fill: gray;
+    -fx-highlight-text-fill: white;
+    
+    -fx-font-size: 1.2em;
+    -fx-text-fill: derive(black, 50%);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 5 0 5 0;
+}
+
+.text-area:focused
+{
+    -fx-scale-x: 1.05;
+    
+    -fx-background-color: white;
+    -fx-alignment: CENTER;
+    
+    -fx-background-color: transparent;
+    -fx-border-color: gray transparent gray transparent;
+    -fx-border-width: 2px;
+    
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: darkgray;
+    -fx-highlight-fill: gray;
+    -fx-highlight-text-fill: white;
+    
+    -fx-font-size: 1.2em;
+    -fx-text-fill: derive(black, 50%);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 5 0 5 0;
+}
+
+.add-appointment-button
+{
+    -fx-background-color: rgba(0, 250, 154, 0.5);
+    -fx-cursor: hand;
+    
+    -fx-text-fill: derive(black, 50%);
+    -fx-font-weight: bold;
+    -fx-font-size: 1em;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.add-appointment-button:hover
+{
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+}
+
+.add-appointment-button:pressed
+{
+    -fx-background-color: rgb(0,250,154);
+    -fx-text-fill: black;
+    
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.add-appointment-button:focused
+{
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.add-appointment-icon
+{
+    -fx-shape: "M103,49c2.8,0,5,2.2,5,5s-2.2,5-5,5H59v44c0,2.8-2.2,5-5,5s-5-2.2-5-5V59H5c-2.8,0-5-2.2-5-5s2.2-5,5-5h44V5
+                c0-2.8,2.2-5,5-5s5,2.2,5,5v44H103z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.appointment-information-icon
+{
+    -fx-shape: "M26.9,32.2h64.8c3.3,0,6-2.7,6-6V6c0-3.3-2.7-6-6-6H26.9c-3.3,0-6,2.7-6,6v20.2C20.9,29.5,23.6,32.2,26.9,32.2z M28,7.1
+                h62.5v17.9H28V7.1z M118.5,26.5v93.4c0,6.9-5.6,12.6-12.6,12.6H12.6c-6.9,0-12.6-5.6-12.6-12.6V26.5c0-6.9,5.6-12.6,12.6-12.6
+                c2,0,3.6,1.6,3.6,3.6c0,2-1.6,3.6-3.6,3.6l0,0c-3,0-5.5,2.5-5.5,5.5v93.4c0,3,2.4,5.5,5.5,5.5h93.3c3,0,5.5-2.4,5.5-5.5V26.5
+                c0-3-2.4-5.5-5.4-5.5c0,0,0,0,0,0c-2,0-3.6-1.6-3.6-3.6s1.6-3.6,3.6-3.6l0,0C112.9,13.9,118.5,19.5,118.5,26.5
+                C118.5,26.5,118.5,26.5,118.5,26.5L118.5,26.5z M17.5,45.3h48.7c2-0.1,3.6,1.4,3.7,3.4s-1.4,3.6-3.4,3.7c-0.1,0-0.3,0-0.4,0H17.5
+                c-2,0.1-3.6-1.4-3.7-3.4s1.4-3.6,3.4-3.7C17.2,45.3,17.4,45.3,17.5,45.3L17.5,45.3z M104.6,62.7c0,2-1.6,3.6-3.6,3.6
+                c0,0,0,0-0.1,0H17.5c-2,0-3.6-1.6-3.6-3.6c0-2,1.6-3.6,3.6-3.6H101C103,59.2,104.6,60.7,104.6,62.7
+                C104.6,62.7,104.6,62.7,104.6,62.7L104.6,62.7z M13.9,76.7c0-2,1.6-3.6,3.6-3.6h64.1c2,0,3.6,1.6,3.6,3.6c0,2-1.6,3.6-3.6,3.6
+                H17.5C15.5,80.2,13.9,78.6,13.9,76.7C13.9,76.7,13.9,76.7,13.9,76.7z M101,94.2H17.5c-2,0-3.6-1.6-3.6-3.6c0-2,1.6-3.6,3.6-3.6
+                H101c2,0,3.6,1.6,3.6,3.6C104.6,92.6,103,94.2,101,94.2z M66.2,101c2,0,3.6,1.6,3.6,3.6c0,2-1.6,3.6-3.6,3.6H17.5
+                c-2,0-3.6-1.6-3.6-3.6c0-2,1.6-3.6,3.6-3.6H66.2z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.treatment-icon
+{
+    -fx-shape: "M144.9,37.3c0-12.6-8.1-24.2-21.1-30.4c-0.9-4.6-5.3-7.7-9.9-6.8c-4.6,0.9-7.7,5.3-6.8,9.9s5.3,7.7,9.9,6.8
+                c2.7-0.5,4.9-2.2,6.1-4.7c10.4,5.5,16.8,15,16.8,25.2c0,16.2-30,30.1-37,30.1s-37-13.9-37-30.1c0-9.9,6.1-19.2,16.1-24.8
+                c2.2,4.1,7.4,5.7,11.5,3.5c4.1-2.2,5.7-7.4,3.5-11.5C94.8,0.3,89.6-1.2,85.5,1c-2.4,1.3-4,3.7-4.4,6.4
+                c-12.5,6.3-20.1,17.7-20.1,29.9c0,18.6,28.2,32.7,39.5,34.8c-0.3,0.4-0.4,0.9-0.4,1.4c0,31.7-6.8,54.6-19.8,66.3
+                c-7.9,7.1-15.9,8.2-19.4,8.3c-7.3-0.3-14.2-3.2-19.5-8.2c-13-11.5-19.8-34.4-19.9-66c10.8-1,18.7-10.6,17.7-21.4
+                c-1-10.8-10.6-18.7-21.4-17.7C7,35.9-0.9,45.4,0.1,56.2c0.9,8.9,7.6,16.1,16.4,17.5c0,33.7,7.3,57.2,21.5,69.9
+                c5.5,5.1,12.5,8.3,19.9,9.2c0.2,0.1,0.4,0.1,0.5,0.1c0.6,0.1,1.2,0.1,1.8,0.1h1c0.6,0,1.2,0,1.8,0c0.2,0,0.4-0.1,0.5-0.1
+                c7.4-0.9,14.4-4.2,19.9-9.2c14.3-12.8,21.6-36.4,21.6-70.1c0-0.4-0.1-0.9-0.3-1.3C115.4,70.7,144.9,56.3,144.9,37.3z M115.5,12
+                c-1.9,0-3.5-1.6-3.5-3.5s1.6-3.5,3.5-3.5s3.5,1.6,3.5,3.5S117.4,12,115.5,12z M89.5,5C91.4,5,93,6.6,93,8.5S91.4,12,89.5,12
+                S86,10.4,86,8.5S87.6,5,89.5,5z M5,54.5c0-8,6.5-14.5,14.5-14.5S34,46.5,34,54.5S27.5,69,19.5,69C11.5,69,5,62.5,5,54.5z
+                M30,54.5C30,48.7,25.3,44,19.5,44S9,48.7,9,54.5S13.7,65,19.5,65C25.3,65,30,60.3,30,54.5z M14,54.5c0-3,2.5-5.5,5.5-5.5
+                s5.5,2.5,5.5,5.5S22.5,60,19.5,60C16.5,60,14,57.5,14,54.5z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.delete-appointment-icon
+{
+    -fx-shape: "M88,0C39.4,0,0,39.4,0,88s39.4,88,88,88s88-39.4,88-88S136.6,0,88,0z M128.4,138.6c0,5-4.1,9.1-9.1,9.1H56.8
+                c-5,0-9.1-4.1-9.1-9.1V46.5h80.7V138.6z M142.8,39c0,3.7-3.1,6.8-6.8,6.8H40c-3.7,0-6.8-3-6.8-6.8v-0.9c0-3.8,3-6.8,6.8-6.8
+                c0,0,0,0,0,0h29.2c1.4-1.9,3.6-3,5.9-3H101c2.3,0,4.5,1.1,5.9,3H136c3.7,0,6.8,3,6.8,6.8L142.8,39z M60.7,132.9V52.2
+                c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5l0,0v80.7c0,2.5-2,4.5-4.5,4.5S60.7,135.4,60.7,132.9z M83.5,132.9V52.2c0-2.5,2-4.5,4.5-4.5
+                s4.5,2,4.5,4.5v80.7c0,2.5-2,4.5-4.5,4.5S83.5,135.4,83.5,132.9z M106.3,132.9V52.2c0-2.5,2-4.5,4.5-4.5s4.5,2,4.5,4.5v80.7
+                c0,2.5-2,4.5-4.5,4.5S106.3,135.4,106.3,132.9z";
+    -fx-background-color: derive(black, 50%);
+}
+
+.date-picker-popup 
+{
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0 , 0, 0, 0.4), 5, 0.2, 0, 3);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0 0 0 0;
+}
+
+.date-picker-popup > .month-year-pane 
+{
+    -fx-background-color: lightgray;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 10;
+}
+
+.date-picker-popup > * > .spinner
+{
+    -fx-spacing: 5;
+    -fx-alignment: CENTER;
+    -fx-fill-height: false;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .button 
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .button:focused 
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .button:hover 
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .button:armed
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+.date-picker-popup > * > .spinner > .left-button 
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .right-button 
+{
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .spinner > .button > .left-arrow,
+.date-picker-popup > * > .spinner > .button > .right-arrow 
+{
+    -fx-background-color: gray;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 6 3 6 3;
+    
+    -fx-cursor: hand;
+}
+
+.date-picker-popup > * > .spinner > .button:hover > .left-arrow,
+.date-picker-popup > * > .spinner > .button:hover > .right-arrow 
+{
+    -fx-scale-x: 1.07;
+    -fx-scale-y: 1.07;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.date-picker-popup > * > .spinner > .button:pressed > .left-arrow,
+.date-picker-popup > * > .spinner > .button:pressed > .right-arrow 
+{
+    -fx-background-color: derive(gray, -50%);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.date-picker-popup > * > .spinner > .button > .left-arrow 
+{
+    -fx-shape: "M5.997,5.072L5.995,6.501l-2.998-4l2.998-4l0.002,1.43l-1.976,2.57L5.997,5.072z";
+    -fx-scale-shape: true;
+    
+    -fx-background-color: gray;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.date-picker-popup > * > .spinner > .button > .right-arrow 
+{
+    -fx-shape: "M2.998-0.07L3-1.499l2.998,4L3,6.501l-0.002-1.43l1.976-2.57L2.998-0.07z";
+    -fx-scale-shape: true;
+    
+    -fx-background-color: gray;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+}
+
+.date-picker-popup > * > .spinner > .label 
+{
+    -fx-alignment: CENTER;
+    
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+    -fx-text-fill: derive(black, 50%);
+    
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > .month-year-pane > .secondary-label 
+{
+    -fx-alignment: BASELINE_CENTER;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > .calendar-grid 
+{
+    -fx-background-color: lightgray;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 10;
+}
+
+.date-picker-popup > * > .date-cell 
+{
+    -fx-background-color: darkgray;
+    -fx-alignment: center;
+    -fx-opacity: 1.0;
+    
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 4;
+}
+
+.date-picker-popup > * > .day-name-cell,
+.date-picker-popup > * > .week-number-cell 
+{
+    -fx-font-size: 1.1em;
+}
+
+/*.date-picker-popup > * > .week-number-cell 
+{
+    -fx-padding: 0.333333em 0.583333em 0.333333em 0.583333em;  4 7 4 7 
+    -fx-border-color: -fx-control-inner-background;
+    -fx-border-width: 1px;
+    -fx-background: -fx-control-inner-background;
+    -fx-background-color: -fx-background;
+    -fx-text-fill: -fx-accent;
+}*/
+
+.date-picker-popup > * > .day-cell
+{
+    -fx-border-width: 1px;
+    -fx-text-fill: derive(black, 50%);
+    -fx-background-color: white;
+    -fx-cursor: hand;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: darkgray;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+/*.date-picker-popup > * > .hijrah-day-cell 
+{
+    -fx-alignment: center;
+    -fx-background-color: red;
+    -fx-padding: 0;
+}*/
+
+/*.date-picker-popup > * > .day-cell > .secondary-text 
+{
+    -fx-fill: red;
+}*/
+
+.date-picker-popup > * > .today 
+{
+    -fx-background-color: rgba(0, 191, 255, 0.3);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.date-picker-popup > * > .day-cell:hover,
+.date-picker-popup > * > .selected,
+.date-picker-popup > * > .previous-month.selected,
+.date-picker-popup > * > .next-month.selected 
+{
+    -fx-background-color: rgba(250, 128, 114, 0.4);
+}
+
+.date-picker-popup > * > .previous-month:hover,
+.date-picker-popup > * > .next-month:hover 
+{
+    -fx-background-color: rgba(250, 128, 114, 0.4)
+}
+
+.date-picker-popup > * > .today:hover,
+.date-picker-popup > * > .today.selected 
+{
+    -fx-background-color: rgba(250, 128, 114, 0.4);
+}
+
+.date-picker-popup > * > .day-cell:focused,
+.date-picker-popup > * > .today:focused 
+{
+    -fx-background-color: rgba(250, 128, 114, 1);
+}
+
+.date-picker-popup > * > .day-cell:focused:hover,
+.date-picker-popup > * > .today:focused:hover,
+.date-picker-popup > * > .selected:focused,
+.date-picker-popup > * > .today.selected:focused 
+{
+    -fx-background-color: rgba(250, 128, 114, 1);
+}
+
+.date-picker-popup > * > .previous-month,
+.date-picker-popup > * > .next-month 
+{
+    -fx-background-color: derive(white, -10%);
+}
+
+.date-picker-popup > * > .day-cell:hover > .secondary-text,
+.date-picker-popup > * > .previous-month > .secondary-text,
+.date-picker-popup > * > .next-month > .secondary-text,
+.date-picker-popup > * > .selected > .secondary-text 
+{
+    -fx-fill: transparent;
+}
+
+.date-picker-popup > * > .previous-month.today,
+.date-picker-popup > * > .next-month.today
+{
+    -fx-background-color: rgba(0, 191, 255, 0.3);
+}
+
+.date-picker-popup > * > .previous-month.today:hover,
+.date-picker-popup > * > .next-month.today:hover 
+{
+    -fx-background-color: rgba(250, 128, 114, 1);;
+}
+
+.list-view
+{
+    -fx-border-color: gray;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-view:focused
+{
+    -fx-border-color: gray;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-cell
+{
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-cell:even:filled
+{
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-cell:odd:filled
+{
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-cell:filled:selected
+{
+    -fx-border-color: transparent transparent gray transparent;
+    -fx-border-width: 2px;
+    -fx-border-style: solid inside;
+    -fx-background-color: rgba(176, 224, 230, 0.2);
+    
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}
+
+.list-cell:empty
+{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    
+    -fx-background-insets: -20 -10 0 -10;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 0;
+}

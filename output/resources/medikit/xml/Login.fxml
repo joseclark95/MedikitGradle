@@ -29,7 +29,7 @@
                   <Text id="medikit-title" strokeType="OUTSIDE" strokeWidth="0.0" text="Medikit" />
                </children>
             </HBox>
-            <Text id="message-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Maneja tu consultorio médico eficazmente" textAlignment="CENTER" wrappingWidth="200.0" />
+            <Text id="message-text" strokeType="OUTSIDE" strokeWidth="0.0" text="Maneja tu consultorio medico eficazmente" textAlignment="CENTER" wrappingWidth="200.0" />
          </children>
          <padding>
             <Insets top="40.0" />
@@ -46,7 +46,7 @@
                   </Button>
                </children>
             </HBox>
-            <Text id="login-title" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesión">
+            <Text id="login-title" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de sesion">
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
@@ -56,7 +56,7 @@
                   <Insets left="30.0" right="30.0" top="30.0" />
                </VBox.margin>
             </TextField>
-            <PasswordField fx:id="passwordField" promptText="Contraseña">
+            <PasswordField fx:id="passwordField" promptText="Contrasena">
                <VBox.margin>
                   <Insets left="30.0" right="30.0" />
                </VBox.margin>
@@ -67,7 +67,7 @@
                   <Button id="close-button" fx:id="warningCloseButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="10.0" prefWidth="10.0" styleClass="shaped-button" />
                </children>
             </HBox>
-            <Button fx:id="loginButton" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Iniciar sesión">
+            <Button fx:id="loginButton" defaultButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Iniciar sesion">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>

@@ -83,8 +83,8 @@ public class PatientTile extends PatientTileBase
             }
             else
             {
-                ((Message2) Medikit.getController(WindowStyle.MESSAGE2)).initController("warning-icon", "Información incompleta", 
-                        "Todos los campos no opcionales deben contener información", "Aceptar");
+                ((Message2) Medikit.getController(WindowStyle.MESSAGE2)).initController("warning-icon", "Informacion incompleta", 
+                        "Todos los campos no opcionales deben contener informacion", "Aceptar");
                 Toolkit.getDefaultToolkit().beep();
                 ((Main) Medikit.getController(WindowStyle.MAIN)).showPopup(Medikit.getWindow(WindowStyle.MESSAGE2));
             }

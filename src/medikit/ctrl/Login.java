@@ -36,7 +36,7 @@ public class Login implements Controller
             
             if(user.isEmpty() || password.isEmpty())
             {
-                warningText.setText("Los campos de texto no pueden estar vacíos");
+                warningText.setText("Los campos de texto no pueden estar vacios");
                 warningPane.setVisible(true);
             }
             else
@@ -45,7 +45,7 @@ public class Login implements Controller
                 Medikit.setUser(user);
                 if(!Medikit.connect())
                 {
-                    warningText.setText("El usuario o contraseña es incorrecto");
+                    warningText.setText("El usuario o contrasena es incorrecto");
                     warningPane.setVisible(true);
                 }
                 else

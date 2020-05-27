@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="370.0" spacing="5.0" stylesheets="@../css/Lists.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-title" text="Oscar Arturo Clark Hernandez" textAlignment="CENTER" wrappingWidth="360.0" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-text" text="Peso:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-title" text="100" />
+            <Separator maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="15.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-text" text="Fecha de nacimiento:" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-title" text="100" />
+         </children>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="patient-search-text" text="Antecedentes:" textAlignment="CENTER" wrappingWidth="360.0">
+         <VBox.margin>
+            <Insets bottom="-5.0" />
+         </VBox.margin>
+      </Text>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="360.0" styleClass="patient-search-label" text="Ligma balls" textAlignment="CENTER" />
+   </children>
+</VBox>

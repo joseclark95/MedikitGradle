@@ -295,7 +295,7 @@ public abstract class InventoryTileBase extends TitledPane {
         genericField.setMinWidth(USE_PREF_SIZE);
         genericField.setPrefHeight(30.0);
         genericField.setPrefWidth(0.0);
-        genericField.setPromptText("Nombre genérico");
+        genericField.setPromptText("Nombre generico");
         GridPane.setMargin(vBox1, new Insets(10.0));
 
         GridPane.setColumnSpan(label, 2);
@@ -307,7 +307,7 @@ public abstract class InventoryTileBase extends TitledPane {
         label.setPrefHeight(40.0);
         label.setPrefWidth(200.0);
         label.getStyleClass().add("patient-information-title");
-        label.setText("Información general");
+        label.setText("Informacion general");
 
         stackPane2.setMaxHeight(USE_PREF_SIZE);
         stackPane2.setMaxWidth(USE_PREF_SIZE);
@@ -353,7 +353,7 @@ public abstract class InventoryTileBase extends TitledPane {
         formField.setMinWidth(USE_PREF_SIZE);
         formField.setPrefHeight(30.0);
         formField.setPrefWidth(0.0);
-        formField.setPromptText("Forma farmacéutica");
+        formField.setPromptText("Forma farmaceutica");
         GridPane.setMargin(vBox2, new Insets(10.0));
 
         GridPane.setColumnSpan(presentationField, 2);
@@ -365,7 +365,7 @@ public abstract class InventoryTileBase extends TitledPane {
         presentationField.setMinWidth(USE_PREF_SIZE);
         presentationField.setPrefHeight(30.0);
         presentationField.setPrefWidth(300.0);
-        presentationField.setPromptText("Presentación");
+        presentationField.setPromptText("Presentacion");
         GridPane.setMargin(presentationField, new Insets(0.0, 0.0, 10.0, 0.0));
         StackPane.setMargin(gridPane, new Insets(2.0, 0.0, 2.0, 0.0));
         stackPane1.setPadding(new Insets(2.0));

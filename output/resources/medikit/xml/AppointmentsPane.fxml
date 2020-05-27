@@ -137,7 +137,7 @@
                     <tabs>
                       <Tab>
                            <graphic>
-                              <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="tab-content" text="Información general" />
+                              <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="220.0" styleClass="tab-content" text="Informacion general" />
                            </graphic>
                            <content>
                               <GridPane>
@@ -149,7 +149,7 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <TextArea fx:id="diagnosticField" prefHeight="200.0" prefWidth="200.0" promptText="Diagnóstico" wrapText="true">
+                                    <TextArea fx:id="diagnosticField" prefHeight="200.0" prefWidth="200.0" promptText="Diagnostico" wrapText="true">
                                        <GridPane.margin>
                                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                        </GridPane.margin>

@@ -95,7 +95,7 @@ public class Main implements Controller
                 statisticsPane.initController();
                 
                 setContent(Medikit.getPane(windowStyle));
-                title.setText("Estadísticas");
+                title.setText("Estadisticas");
                 titleIcon.setId("statistics-title-icon");
                 break;
             }

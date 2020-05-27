@@ -293,7 +293,7 @@ public abstract class PatientTileBase extends TitledPane {
         genderField.setMinWidth(USE_PREF_SIZE);
         genderField.setPrefHeight(30.0);
         genderField.setPrefWidth(0.0);
-        genderField.setPromptText("Género");
+        genderField.setPromptText("Genero");
 
         phoneField.setAlignment(javafx.geometry.Pos.CENTER);
         phoneField.setMaxHeight(USE_PREF_SIZE);
@@ -302,7 +302,7 @@ public abstract class PatientTileBase extends TitledPane {
         phoneField.setMinWidth(USE_PREF_SIZE);
         phoneField.setPrefHeight(30.0);
         phoneField.setPrefWidth(0.0);
-        phoneField.setPromptText("Número de Teléfono");
+        phoneField.setPromptText("Numero de Telefono");
 
         addressField.setAlignment(javafx.geometry.Pos.CENTER);
         addressField.setMaxHeight(USE_PREF_SIZE);
@@ -311,7 +311,7 @@ public abstract class PatientTileBase extends TitledPane {
         addressField.setMinWidth(USE_PREF_SIZE);
         addressField.setPrefHeight(30.0);
         addressField.setPrefWidth(0.0);
-        addressField.setPromptText("Dirección");
+        addressField.setPromptText("Direccion");
         GridPane.setMargin(vBox0, new Insets(10.0));
 
         GridPane.setColumnIndex(backgroundField, 1);
@@ -337,7 +337,7 @@ public abstract class PatientTileBase extends TitledPane {
         label.setPrefHeight(40.0);
         label.setPrefWidth(200.0);
         label.getStyleClass().add("patient-information-title");
-        label.setText("Información general");
+        label.setText("Informacion general");
 
         stackPane2.setMaxHeight(USE_PREF_SIZE);
         stackPane2.setMaxWidth(USE_PREF_SIZE);

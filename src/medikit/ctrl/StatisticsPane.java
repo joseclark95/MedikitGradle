@@ -61,7 +61,7 @@ public class StatisticsPane implements Controller
                         yAxis.setLabel("Importe en pesos (MXN)");
                         
                         LineChart<String, Number> lineChart = new LineChart<>(xAxis, yAxis);
-                        lineChart.setTitle("Ganancias del año: " + year);
+                        lineChart.setTitle("Ganancias del ano: " + year);
                         lineChart.setAnimated(true);
                         
                         XYChart.Series earnings = new XYChart.Series();
@@ -99,7 +99,7 @@ public class StatisticsPane implements Controller
                         yAxis.setLabel("Cantidad");
                         
                         LineChart<String, Number> lineChart = new LineChart<>(xAxis, yAxis);
-                        lineChart.setTitle("Cantidad de consultas del año: " + year);
+                        lineChart.setTitle("Cantidad de consultas del ano: " + year);
                         lineChart.setAnimated(true);
                         
                         XYChart.Series earnings = new XYChart.Series();

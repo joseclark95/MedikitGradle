@@ -1,0 +1,19 @@
+.root
+{
+    -fx-background-color: gray;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 1em;
+}
+
+.text
+{
+    -fx-fill: white;
+    -fx-font-size: 1.3em;
+}
+
+.amount
+{
+    -fx-fill: mediumspringgreen;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}

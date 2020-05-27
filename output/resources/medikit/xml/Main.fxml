@@ -23,7 +23,7 @@
    <children>
       <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" styleClass="left-pane" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
          <children>
-            <Text id="navigation-title" strokeType="OUTSIDE" strokeWidth="0.0" text="NAVEGACIÓN">
+            <Text id="navigation-title" strokeType="OUTSIDE" strokeWidth="0.0" text="NAVEGACIoN">
                <VBox.margin>
                   <Insets left="20.0" top="130.0" />
                </VBox.margin>
@@ -52,7 +52,7 @@
                   <StackPane id="inventory-icon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" styleClass="icon" />
                </graphic>
             </ToggleButton>
-            <ToggleButton fx:id="statisticsToggle" alignment="BASELINE_LEFT" graphicTextGap="30.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" text="Estadísticas" textAlignment="CENTER" toggleGroup="$navigationGroup">
+            <ToggleButton fx:id="statisticsToggle" alignment="BASELINE_LEFT" graphicTextGap="30.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" text="Estadisticas" textAlignment="CENTER" toggleGroup="$navigationGroup">
                <graphic>
                   <StackPane id="statistics-icon" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" styleClass="icon" />
                </graphic>
