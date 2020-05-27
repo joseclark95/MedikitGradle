@@ -1,3 +1,5 @@
+import org.gradle.plugins.ide.eclipse.model.AccessRule
+
 buildscript 
 {
     dependencies 
@@ -14,6 +16,7 @@ buildscript
 }
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 
 repositories 
 {
@@ -29,6 +32,18 @@ dependencies
     // when using OpenJFX (Ubuntu), please adjust accordingly
     // compile files("/usr/share/java/openjfx/lib/packager.jar")
 	compile group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '7.2.1.jre8'
+}
+
+eclipse {
+    classpath {
+        file {
+            whenMerged {
+                def jre = entries.find { it.path.contains 'org.eclipse.jdt.launching.JRE_CONTAINER' }
+                jre.accessRules.add(new AccessRule('0', 'javafx/**'))
+                jre.accessRules.add(new AccessRule('0', 'com/sun/javafx/**'))
+            }
+        }
+    }
 }
 
 sourceSets 
